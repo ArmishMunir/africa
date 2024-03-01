@@ -18,7 +18,7 @@ export const OrderOverview = ({ ...props }) => {
         <IoCartOutline size={80} className="summary-icon" />
         <h2 className="summary-title">Summary</h2>
       </div>
-      <div className="d-flex flex-column mt-4 gap-y-2">
+      <div className="d-flex flex-column mt-5 gap-y-2">
         {values.ticketCategory1 ? (
           <div className="order-container d-flex align-items-center justify-content-between order-item px-3 py-4">
             <p>{values.ticketCategory1} X Conference Access</p>

@@ -265,7 +265,7 @@ p {
   margin-bottom: 0;
 }
 
-.drawer-footer {
+.drawer-footer-last {
   background: linear-gradient(to bottom, #2563eb, #0284c7);
 }
 .pay-now-button {

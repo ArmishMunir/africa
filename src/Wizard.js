@@ -146,7 +146,11 @@ const Wizard = ({
             </div>
           )}
           {isLastStep && stepNumber !== 0 && (
-            <div className="mt-3 drawer-spacing drawer-footer py-3">
+            <div
+              className={`mt-3 drawer-spacing drawer-footer py-3
+              ${stepNumber === 3 ? "drawer-footer-last" : ""}
+            `}
+            >
               <CButton
                 className=""
                 variant="ghost"
