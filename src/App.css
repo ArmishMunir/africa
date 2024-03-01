@@ -1,0 +1,275 @@
+@import "@coreui/coreui/dist/css/coreui.min.css";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.event-details {
+  flex: 1.5;
+}
+
+.order-container {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.form-main {
+  flex: 1;
+  background-color: #f1f5f9;
+}
+
+.formik-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.stepper__sticky {
+  margin: 0 -1rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: white;
+  border-bottom: 1px solid var(--cui-gray-200);
+}
+
+.stepper__form {
+  width: 100%;
+  padding: 50px;
+}
+
+.fixed-width {
+  width: 193px;
+  height: 50px;
+}
+
+.stepper__form-height {
+  min-height: 100%;
+}
+
+.drawer-spacing {
+  display: flex;
+  justify-content: space-between;
+}
+.drawer-spacing-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.drawer-footer {
+  z-index: 20;
+  position: sticky;
+  border-top: 1px solid var(--cui-gray-200);
+  background: white;
+  bottom: 0;
+  margin: 0 -1rem;
+  padding-inline: 20px;
+}
+
+.drawer-footer-btn {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.drawer-footer-back-btn,
+.drawer-footer-next-btn {
+  margin: 1rem 1rem 1rem 1rem;
+}
+
+.drawer-offcanvas-sticky {
+  position: sticky;
+  --cui-offcanvas-padding-y: 0rem;
+}
+
+.invalid-feedback {
+  display: inline;
+  position: relative;
+  text-align: right;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.bIncrementDecrement-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 4px;
+  max-height: 50px;
+
+  .selected-item {
+    width: 155px;
+    padding: 12px;
+    border-right: 1px gray;
+    text-align: center;
+  }
+}
+
+.dropdown-icon,
+.icon-decrement,
+.icon-increment {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.check-box {
+  display: flex;
+  gap: 10px;
+}
+
+.decrement-disabled {
+  pointer-events: none;
+  background-color: gray;
+}
+
+.count {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  text-align: center;
+  .not-allowed {
+    border: 2px solid red;
+  }
+  input {
+    padding: 12px 40px;
+    width: 120px;
+    border: none;
+    text-align: center;
+  }
+}
+input.number-to-text::-webkit-outer-spin-button,
+input.number-to-text::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.incrementor {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.main-ticket {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.paystack-button {
+  cursor: pointer;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background-color: #bfbfbf;
+  font-weight: bold;
+  color: #e0eafc;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 45px;
+  margin-top: 40px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.exit-step {
+  .exit-step-title {
+    p {
+      font-size: 18px;
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.summary-title {
+  font-size: 25px;
+  margin-bottom: 1.75rem;
+  font-weight: 500;
+}
+.summary-icon {
+  color: #fdba74;
+  font-weight: 800;
+}
+
+.order-item {
+  background-color: #fff;
+  border-radius: 8px;
+  p {
+    margin-bottom: 0;
+  }
+}
+.total {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 1.75rem;
+  margin-bottom: 0;
+}
+
+.total-text {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 1.75rem;
+  margin-bottom: 0;
+}
+
+.drawer-footer {
+  background: linear-gradient(to bottom, #2563eb, #0284c7);
+}
+.pay-now-button {
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+}
