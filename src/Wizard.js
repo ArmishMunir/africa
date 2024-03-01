@@ -33,9 +33,9 @@ const Wizard = ({
       ticketCategory2: Yup.number().required("Required"),
       cantMakeIt: Yup.bool().nullable(),
       cantMakeItDetails: Yup.object().shape({
-        firstName: Yup.string(),
-        lastName: Yup.string(),
-        email: Yup.string().email("Invalid Email"),
+        firstName: Yup.string().required("Required"),
+        lastName: Yup.string().required("Required"),
+        email: Yup.string().email("Invalid Email").required("Required"),
       }),
     }),
     Yup.object().shape({
@@ -135,30 +135,26 @@ const Wizard = ({
             <div className="stepper__form">{step}</div>
           </div>
           {isLastStep && stepNumber === 0 && (
-            <div className="mt-3 drawer-spacing-end drawer-footer">
-              <CButton
-                className="mr-auto drawer-footer-btn"
+            <div className="mt-3 drawer-spacing-end drawer-footer py-4 px-2">
+              <button
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-5 rounded-sm inline-flex items-center cursor-pointer"
                 disabled={!formik.isValid}
                 type="submit"
               >
                 Submit
-              </CButton>
+              </button>
             </div>
           )}
           {isLastStep && stepNumber !== 0 && (
-            <div
-              className={`mt-3 drawer-spacing drawer-footer py-3
-              ${stepNumber === 3 ? "drawer-footer-last" : ""}
-            `}
-            >
-              <CButton
-                className=""
+            <div className="mt-3 drawer-spacing drawer-footer py-4 px-2">
+              <button
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-5 rounded-sm inline-flex items-center cursor-pointer"
                 variant="ghost"
                 onClick={() => previous()}
                 type="button"
               >
-                <IoChevronBackSharp color="white" size={20} />
-              </CButton>
+                <IoChevronBackSharp color="white" />
+              </button>
               <PaystackButton
                 type="submit"
                 disabled={!formik.isValid}
@@ -168,36 +164,33 @@ const Wizard = ({
             </div>
           )}
           {!isLastStep && stepNumber === 0 && (
-            <div className="mt-3 drawer-spacing-end drawer-footer">
-              <CButton
-                className="drawer-footer-next-btn"
+            <div className="mt-3 drawer-spacing-end drawer-footer py-4 px-2">
+              <button
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-5 rounded-sm inline-flex items-center cursor-pointer"
                 disabled={!formik.isValid}
                 onClick={() => next(formik)}
                 type="button"
-                variant="outline"
               >
                 Next
-              </CButton>
+              </button>
             </div>
           )}
           {!isLastStep && stepNumber >= 1 && (
-            <div className="mt-3 drawer-spacing drawer-footer">
-              <CButton
-                className="drawer-footer-back-btn"
-                variant="outline"
+            <div className="mt-3 drawer-spacing drawer-footer py-4 px-2">
+              <button
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-5 rounded-sm inline-flex items-center cursor-pointer"
                 onClick={() => previous()}
-                type="button"
               >
                 Back
-              </CButton>
-              <CButton
-                className="drawer-footer-next-btn"
+              </button>
+              <button
+                className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-semibold py-2 px-5 rounded-sm inline-flex items-center cursor-pointer"
                 disabled={!formik.isValid}
                 onClick={() => next(formik)}
                 type="button"
               >
                 Next
-              </CButton>
+              </button>
             </div>
           )}
         </Form>

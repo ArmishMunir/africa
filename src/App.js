@@ -11,6 +11,7 @@ import { FormTextInput } from "./FormTextInput";
 import FormSelectMultipleBuyers from "./FormSelectMultipleBuyers";
 import { FormIncrementor } from "./FormIncrementor";
 import Incrementor from "./Incrementor";
+import LeftSection from "./LeftSection";
 import {
   CButton,
   CDropdown,
@@ -98,9 +99,9 @@ const App = () => {
   return (
     <div className="d-flex align-items-center justify-content-center overflow-hidden">
       <div className="event-details">
-        <p>Hello</p>
+        <LeftSection />
       </div>
-      <div className="form-main overflow-y-scroll">
+      <div className="form-main overflow-y-scroll overflow-x-hidden">
         <Wizard
           editMode={true}
           readOnly={false}

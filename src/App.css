@@ -57,7 +57,7 @@
 
 .form-main {
   flex: 1;
-  background-color: #f1f5f9;
+  background-color: #fff;
 }
 
 .formik-form {
@@ -159,7 +159,7 @@
 .check-box {
   display: flex;
   gap: 10px;
-  background-color: #fff;
+  background-color: #f1f5f9;
   margin-bottom: 0.5rem;
   padding: 10px;
   border-radius: 8px;
@@ -257,7 +257,7 @@ p {
 }
 
 .order-item {
-  background-color: #fff;
+  background-color: #f1f5f9;
   border-radius: 8px;
   p {
     margin-bottom: 0;
@@ -283,7 +283,7 @@ p {
 .pay-now-button {
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: #000000;
 }
 
 .exit-step-title {
