@@ -62,8 +62,8 @@ const App = () => {
       ),
   });
   const initialValues = {
-    ticketCategory1: 2,
-    ticketCategory2: 4,
+    ticketCategory1: 0,
+    ticketCategory2: 0,
     cantMakeIt: false,
     cantMakeItDetails: {
       firstName: "",
@@ -150,7 +150,7 @@ const App = () => {
                   Conference and Masterclass (October 15th - 17th)
                 </p>
               </div>
-              <div className="d-flex align-items-center justify-content-center my-4">
+              <div className="d-flex align-items-center justify-content-center">
                 <CButton className="fixed-width">APPLY NOW</CButton>
               </div>
             </div>
@@ -234,7 +234,7 @@ const App = () => {
                 <div className="exit-step-title mt-4">
                   <p>What are you looking for?</p>
                 </div>
-                <div className="check-box">
+                <div className="check-box mt-4">
                   <FormCheckInput
                     id="exitForm.looking_for.option_1"
                     name="exitForm.looking_for.option_1"

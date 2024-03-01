@@ -159,11 +159,15 @@
 .check-box {
   display: flex;
   gap: 10px;
+  background-color: #fff;
+  margin-bottom: 0.5rem;
+  padding: 10px;
+  border-radius: 8px;
 }
 
 .decrement-disabled {
   pointer-events: none;
-  background-color: gray;
+  /* background-color: gray; */
 }
 
 .count {
@@ -222,15 +226,19 @@ p {
 .exit-step {
   .exit-step-title {
     p {
-      font-size: 18px;
+      font-size: 22px;
       margin-bottom: 0.75rem;
       font-weight: 500;
+      text-transform: uppercase;
+      padding-top: 2rem;
+      border-bottom: 2px solid #716c6c;
     }
   }
   p {
-    font-size: 16px;
+    font-size: 19px;
     line-height: 24px;
     margin-bottom: 0.25rem;
+    max-width: fit-content;
   }
 }
 
@@ -272,4 +280,8 @@ p {
   font-size: 20px;
   font-weight: 700;
   color: #fff;
+}
+
+.exit-step-title {
+  margin-bottom: 1rem;
 }

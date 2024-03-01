@@ -33,9 +33,9 @@ const Wizard = ({
       ticketCategory2: Yup.number().required("Required"),
       cantMakeIt: Yup.bool().nullable(),
       cantMakeItDetails: Yup.object().shape({
-        firstName: Yup.string().required("Required"),
-        lastName: Yup.string().required("Required"),
-        email: Yup.string().email("Invalid Email").required("Required"),
+        firstName: Yup.string(),
+        lastName: Yup.string(),
+        email: Yup.string().email("Invalid Email"),
       }),
     }),
     Yup.object().shape({
