@@ -174,6 +174,7 @@ const Wizard = ({
                 disabled={!formik.isValid}
                 onClick={() => next(formik)}
                 type="button"
+                variant="outline"
               >
                 Next
               </CButton>

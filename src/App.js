@@ -139,8 +139,8 @@ const App = () => {
 
               <Incrementor id="ticketCategory2" name="ticketCategory2" />
             </div>
-            <div className="incrementor d-flex">
-              <div className="main-ticket">
+            <div className="row">
+              <div className="main-ticket col-8">
                 <h6>Coach The Coaches</h6>
                 <p>
                   This session is for coaches who are actively coaching in the
@@ -150,8 +150,8 @@ const App = () => {
                   Conference and Masterclass (October 15th - 17th)
                 </p>
               </div>
-              <div className="d-flex align-items-center justify-content-center">
-                <CButton className="fixed-width">APPLY NOW</CButton>
+              <div className="col-4">
+                <a href="https://google.com">apply here</a>
               </div>
             </div>
             <div className="mt-3">

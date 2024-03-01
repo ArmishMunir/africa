@@ -218,6 +218,10 @@ input.number-to-text::-webkit-inner-spin-button {
   margin-top: 40px;
 }
 
+a {
+  padding-bottom: 1rem;
+}
+
 p {
   font-size: 16px;
   line-height: 24px;
@@ -284,4 +288,8 @@ p {
 
 .exit-step-title {
   margin-bottom: 1rem;
+}
+
+input {
+  width: 15px;
 }
